@@ -1,16 +1,18 @@
-# GetCleanData-CourseProject
+# Get and Clean Data Course Project 
 
 ## Intro
-This repository is for the class project of the May 2015 section of the Getting and Cleaning coursera couse. The two files of most interest would be the run\_analysis.R script along with a copy of it's output in a file non-creatively named tidyTable.txt. This files should be identical to the file submitted to the coursera project page which can be directly loaded into R via;
+This readme (and the whole repository) is for those random folks which were choosen to peer review and should be read as such ...
+
+
+This repository is for the class project of the May 2015 section of the Getting and Cleaning coursera couse. The two files of most interest would be the run\_analysis.R script along with a copy of it's output in a file non-creatively named tidyTable.txt. 
+
+The TidyTbl.txt file should be identical to the file submitted to the coursera project page which can be directly loaded into R via;
 
 ``` 
 address<-"http://s3.amazonaws.com/coursera-uploads/user-7e5a904cf39689231a956e28/973501/asst-3/720bfe90ff7611e4a99a8f160649743a.txt"
 data<-read.table(url(address), header=T, check.names=F)
 View(data)
 ```
-
-## Full disclosure
-In all honesty, this readme (and the whole repository) is for those random peers which were assigned to review the fruits of my labor and should be read as such.
 
 ## Why did you (meaning I)  ... 
 Q. only select columns from the original table that had mean() or std() in the label when other fields looked like means ? 
@@ -20,7 +22,11 @@ Q. Use such abominable column labels
 A. See the 'Is tidyTbl.txt tidy?' section
 
 ## Is tidyTbl.txt tidy?
-I would argue it meets the critria. Columns labels are names only. Each column relates to one and only one variable. No variables are repeated across rows or columns. The table holds no unrelated variables.   
+I would argue it meets the critria. 
+  -- Columns labels are names only. 
+  -- Each column relates to one and only one variable. 
+  -- No variables are repeated across rows or columns. 
+  -- The table holds no unrelated variables.   
 
 Objections will likely be made about my choice of labels for the columns, in particular the use/retention of mixed/camel case and non-alpha characters. It's understood that this goes against the party line from the class however 
   1 the original labels, of which most columns of the tidy table are means, have a consistent naming convention which conveys meaning well
