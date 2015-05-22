@@ -25,6 +25,7 @@ data_set_url<- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FU
 local_dir <- "UCI HAR Dataset"
 
 
+# normal entry point for generation of the specified output
 run_analysis <- function() {
     validate_raw_dataset()
     test_set = load_and_shape_dataset("test")   # load and shape the test set
@@ -40,7 +41,7 @@ run_analysis <- function() {
 
 create_tidy <- function( x ) {
     tidy<-group_by( x, subjectid, activity ) %>% summarise_each(funs(mean), -(subjectid:activity) )
-    reformat <- function(x) { 
+    reformat <- function(x) {
         preface = ifelse( grepl("subject|activity",x), "", "meanof-")
         sprintf( "%s%s", preface, x )
     }
