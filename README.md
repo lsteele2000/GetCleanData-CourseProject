@@ -4,9 +4,9 @@
 This readme (and the whole repository) is for those random folks which were choosen to peer review and should be read as such ...
 
 
-This repository is for the class project of the May 2015 section of the Getting and Cleaning coursera couse. The two files of most interest would be the run\_analysis.R script along with a copy of it's output in a file non-creatively named tidyTable.txt. 
+This repository is for the course project of the May 2015 section of the Getting and Cleaning coursera source. The two files of most interest would be the run\_analysis.R script along with a copy of it's output in a file non-creatively named tidyTable.txt. 
 
-The TidyTbl.txt file should be identical to the file submitted to the coursera project page which can be directly loaded into R via;
+The TidyTbl.txt file should be identical to the file submitted to the coursera project page which can be directly loaded into R via the following code, *note the use of check.names=FALSE to prevent the load from mucking with the column label*.
 
 ``` 
 address<-"http://s3.amazonaws.com/coursera-uploads/user-7e5a904cf39689231a956e28/973501/asst-3/720bfe90ff7611e4a99a8f160649743a.txt"
