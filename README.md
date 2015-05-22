@@ -15,6 +15,9 @@ View(data)
 ```
 
 ## Why did you (meaning I)  ... 
+* Q: Not comment the script sufficiently
+* A: I seldom comment my code, preferring to let the code speak for itself. I had planned to make an exception for the peer reviewing but honestly forgot about it until right this moment and doubt I'll have time to go back and add them.
+
 * Q: only select columns from the original table that had mean() or std() in the label, other fields looked like means
 * A: the requirements were abstract and I took the easy way out, seriously though that seems most appropriate ...
 
